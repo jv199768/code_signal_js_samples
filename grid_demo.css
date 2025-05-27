@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid_demo {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid_demo > div {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid_demo"> 
+  <div>I</div>
+  <div>love</div>
+  <div>Grid</div>
+  <div>Layout!</div>
+</div>
+
+</body>
+</html>
