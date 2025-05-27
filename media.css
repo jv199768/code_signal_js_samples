@@ -1,0 +1,9 @@
+.column {
+  width: 100%; /* Default CSS rules for the smallest screens, e.g., mobile phones */
+}
+@media screen and (min-width: 600px) {
+  .column {
+    width: 30%;
+    float: left;
+  }
+}
