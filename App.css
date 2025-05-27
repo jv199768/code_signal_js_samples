@@ -1,0 +1,22 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
+const App = () => {
+  const [data, setData] = useState(null);
+
+  // We don't specify `localhost:5000`, as it's already configured in CodeSignal's IDE
+  useEffect(() => axios.get('/api').then(response => {
+    setData(response.data);
+  }), []);
+
+  return (
+    <div>
+      {data ? 
+        <div>{data}</div> : 
+        <div>Loading...</div>
+      }
+    </div>
+  );
+};
+
+export default App;
