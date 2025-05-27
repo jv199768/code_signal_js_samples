@@ -1,0 +1,7 @@
+<img id="image1" src="myimage.jpg">
+<script>
+    let img = document.getElementById('image1');
+    img.setAttribute('alt', 'An image');
+    let imgSource = img.getAttribute('src');
+    console.log(imgSource); // prints 'myimage.jpg' to the console
+</script>
