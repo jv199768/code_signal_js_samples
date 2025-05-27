@@ -1,0 +1,6 @@
+  // ...
+  const handleSubmit = (event) => {
+    event.preventDefault();  // prevents form submission from refreshing the page
+    alert(`The input field text is "${value}"`);
+  };
+  // ...
