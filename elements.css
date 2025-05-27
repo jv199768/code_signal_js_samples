@@ -1,0 +1,6 @@
+<div id="div2" class="oldClass">Some div</div>
+<script>
+    let otherDiv = document.querySelector('#div2');
+    otherDiv.classList.add('newClass');
+    otherDiv.classList.remove('oldClass');
+</script>
